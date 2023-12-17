@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/PocetniEkran">
+        <file>Slike/postavke_ikona.png</file>
+    </qresource>
+</RCC>
