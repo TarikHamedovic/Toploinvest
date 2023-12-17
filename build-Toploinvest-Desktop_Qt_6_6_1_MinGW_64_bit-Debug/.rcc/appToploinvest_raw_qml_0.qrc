@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/Toploinvest/">
+    <file alias="Main.qml">C:/Users/User/Desktop/III Semestar/ICR/Toploinvest/Toploinvest/Main.qml</file>
+    <file alias="resources.qrc">C:/Users/User/Desktop/III Semestar/ICR/Toploinvest/Toploinvest/resources.qrc</file>
+  </qresource>
+</RCC>
+

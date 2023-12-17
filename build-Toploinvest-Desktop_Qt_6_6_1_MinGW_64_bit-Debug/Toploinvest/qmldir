@@ -1,0 +1,5 @@
+module Toploinvest
+typeinfo appToploinvest.qmltypes
+prefer :/Toploinvest/
+Main 1.0 Main.qml
+

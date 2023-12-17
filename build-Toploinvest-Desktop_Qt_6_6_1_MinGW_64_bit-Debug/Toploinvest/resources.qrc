@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Slike/konfiguracija_ikona.png</file>
+        <file>Slike/opste_upravljanje_i_nadgledanje_ikona.png</file>
+        <file>Slike/logiranje_i_prikaz_alrama_ikona.png</file>
+        <file>Slike/postavke_alarma_ikona.png</file>
+    </qresource>
+</RCC>
