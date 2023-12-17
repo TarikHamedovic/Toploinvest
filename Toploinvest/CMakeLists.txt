@@ -16,8 +16,12 @@ qt_add_executable(appToploinvest
 qt_add_qml_module(appToploinvest
     URI Toploinvest
     VERSION 1.0
-    QML_FILES Main.qml
-    RESOURCES
+    QML_FILES
+        Main.qml
+        Konfiguracija.qml
+        PostavkeAlarma.qml
+        LogiranjeIPrikazAlarma.qml
+        OpsteUpravljanjeINadgledanje.qml
     RESOURCES resources.qrc
 )
 

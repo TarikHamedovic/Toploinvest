@@ -12,7 +12,7 @@ Window {
     height: 1080
     title: pocetniEkran
     color: "lightgrey"
-    visibility: ApplicationWindow.FullScreen // Set to fullscreen
+    visibility: Window.FullScreen
     //flags: Qt.FramelessWindowHint
 
     // Naslovni text sa imenom Firme
@@ -41,8 +41,8 @@ Window {
         Rectangle {
 
             id: konfiguracijaId
-            height: 300
-            width: 250
+            height: 350
+            width: 300
             color: "lightblue"
 
             Image {
@@ -56,11 +56,20 @@ Window {
             }
 
             Text {
-                property string nazivKvadrata1: "Konfiguracija"
+                property string nazivKvadrata1: "KONFIGURACIJA"
                 text: nazivKvadrata1
                 anchors.centerIn: konfiguracijaId
                 font {
                     pixelSize : velicinaTexta
+                }
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    var konfiguracijaWindow = Qt.createComponent("Konfiguracija.qml").createObject(parent);
+                    pocetniEkranId.visible = false;
+                    konfiguracijaWindow.show();
                 }
             }
         }
@@ -68,8 +77,8 @@ Window {
         Rectangle {
 
             id: opsteUpravljanjeINadgledanjeId
-            height: 300
-            width: 250
+            height: 350
+            width: 300
             color: "lightblue"
 
             Image {
@@ -83,11 +92,20 @@ Window {
             }
 
             Text {
-                property string nazivKvadrata2: "Opšte upravljanje i nadgledanje"
+                property string nazivKvadrata2: "OPŠTE UPRAVLJANJE I NADGLEDANJE"
                 text: nazivKvadrata2
                 anchors.centerIn: opsteUpravljanjeINadgledanjeId
                 font {
                     pixelSize : velicinaTexta
+                }
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    var konfiguracijaWindow = Qt.createComponent("OpsteUpravljanjeINadgledanje.qml").createObject(parent);
+                    pocetniEkranId.visible = false;
+                    konfiguracijaWindow.show();
                 }
             }
         }
@@ -95,8 +113,8 @@ Window {
         Rectangle {
 
             id: postavkeAlarmaId
-            height: 300
-            width: 250
+            height: 350
+            width: 300
             color: "lightblue"
 
             Image {
@@ -110,11 +128,20 @@ Window {
             }
 
             Text {
-                property string nazivKvadrata3: "Postavke alarma"
+                property string nazivKvadrata3: "POSTAVKE ALARMA"
                 text: nazivKvadrata3
                 anchors.centerIn: postavkeAlarmaId
                 font {
                     pixelSize : velicinaTexta
+                }
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    var konfiguracijaWindow = Qt.createComponent("PostavkeAlarma.qml").createObject(parent);
+                    pocetniEkranId.visible = false;
+                    konfiguracijaWindow.show();
                 }
             }
         }
@@ -122,8 +149,8 @@ Window {
         Rectangle {
 
             id: logiranjeIPrikazAlarma
-            height: 300
-            width: 250
+            height: 350
+            width: 300
             color: "lightblue"
 
             Image {
@@ -137,11 +164,20 @@ Window {
             }
 
             Text {
-                property string nazivKvadrata4: "Logiranje i prikaz alarma"
+                property string nazivKvadrata4: "LOGIRANJE I PRIKAZ ALARMA"
                 text: nazivKvadrata4
                 anchors.centerIn: logiranjeIPrikazAlarma
                 font {
                     pixelSize : velicinaTexta
+                }
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    var konfiguracijaWindow = Qt.createComponent("LogiranjeIPrikazAlarma.qml").createObject(parent);
+                    pocetniEkranId.visible = false;
+                    konfiguracijaWindow.show();
                 }
             }
         }

@@ -1,6 +1,10 @@
 <RCC>
   <qresource prefix="/Toploinvest/">
     <file alias="Main.qml">C:/Users/User/Desktop/III Semestar/ICR/Toploinvest/Toploinvest/Main.qml</file>
+    <file alias="Konfiguracija.qml">C:/Users/User/Desktop/III Semestar/ICR/Toploinvest/Toploinvest/Konfiguracija.qml</file>
+    <file alias="PostavkeAlarma.qml">C:/Users/User/Desktop/III Semestar/ICR/Toploinvest/Toploinvest/PostavkeAlarma.qml</file>
+    <file alias="LogiranjeIPrikazAlarma.qml">C:/Users/User/Desktop/III Semestar/ICR/Toploinvest/Toploinvest/LogiranjeIPrikazAlarma.qml</file>
+    <file alias="OpsteUpravljanjeINadgledanje.qml">C:/Users/User/Desktop/III Semestar/ICR/Toploinvest/Toploinvest/OpsteUpravljanjeINadgledanje.qml</file>
     <file alias="resources.qrc">C:/Users/User/Desktop/III Semestar/ICR/Toploinvest/Toploinvest/resources.qrc</file>
   </qresource>
 </RCC>

@@ -12,6 +12,34 @@ namespace _0x5f_Toploinvest_Main_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _0x5f_Toploinvest_Konfiguracija_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _0x5f_Toploinvest_PostavkeAlarma_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _0x5f_Toploinvest_LogiranjeIPrikazAlarma_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _0x5f_Toploinvest_OpsteUpravljanjeINadgledanje_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -27,6 +55,10 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/Toploinvest/Main.qml"), &QmlCacheGeneratedCode::_0x5f_Toploinvest_Main_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/Toploinvest/Konfiguracija.qml"), &QmlCacheGeneratedCode::_0x5f_Toploinvest_Konfiguracija_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/Toploinvest/PostavkeAlarma.qml"), &QmlCacheGeneratedCode::_0x5f_Toploinvest_PostavkeAlarma_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/Toploinvest/LogiranjeIPrikazAlarma.qml"), &QmlCacheGeneratedCode::_0x5f_Toploinvest_LogiranjeIPrikazAlarma_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/Toploinvest/OpsteUpravljanjeINadgledanje.qml"), &QmlCacheGeneratedCode::_0x5f_Toploinvest_OpsteUpravljanjeINadgledanje_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

@@ -2,4 +2,8 @@ module Toploinvest
 typeinfo appToploinvest.qmltypes
 prefer :/Toploinvest/
 Main 1.0 Main.qml
+Konfiguracija 1.0 Konfiguracija.qml
+PostavkeAlarma 1.0 PostavkeAlarma.qml
+LogiranjeIPrikazAlarma 1.0 LogiranjeIPrikazAlarma.qml
+OpsteUpravljanjeINadgledanje 1.0 OpsteUpravljanjeINadgledanje.qml
 
