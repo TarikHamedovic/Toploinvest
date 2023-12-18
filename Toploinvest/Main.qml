@@ -8,11 +8,11 @@ Window {
     property string pocetniEkran : "Pocetni Ekran"
     property int velicinaTexta : 18
     visible: true
-    width: 1920
-    height: 1080
+    width: 800
+    height: 600
     title: pocetniEkran
     color: "lightgrey"
-    visibility: Window.FullScreen
+    //visibility: Window.FullScreen
     //flags: Qt.FramelessWindowHint
 
     // Naslovni text sa imenom Firme
