@@ -50,7 +50,9 @@ Window {
             id: konfiguracijaId
             height: 350
             width: 300
-            color: "lightblue"
+            color: "#40006e8c"
+            border.color: "#006e8c"
+            border.width: 2
 
             Image {
                 source : "qrc:/Slike/konfiguracija_ikona.png"
@@ -66,6 +68,8 @@ Window {
 
             Text {
                 property string nazivKvadrata1: "KONFIGURACIJA"
+                x: 40
+                y: 220
                 color: "#006e8c"
                 text: nazivKvadrata1
                 font.pixelSize: 25
@@ -80,7 +84,7 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     var konfiguracijaWindow = Qt.createComponent("Konfiguracija.qml").createObject(parent);
-                    pocetniEkranId.visible = false;
+                    //pocetniEkranId.visible = false;
                     konfiguracijaWindow.show();
                 }
             }
@@ -91,7 +95,9 @@ Window {
             id: opsteUpravljanjeINadgledanjeId
             height: 350
             width: 300
-            color: "lightblue"
+            color: "#40006e8c"
+            border.color: "#006e8c"
+            border.width: 2
 
             Image {
                 source : "qrc:/Slike/opste_upravljanje_i_nadgledanje_ikona.png"
@@ -107,6 +113,8 @@ Window {
 
             Text {
                 property string nazivKvadrata2: "OPŠTE UPRAVLJANJE I NADGLEDANJE"
+                x: 40
+                y: 220
                 color: "#006e8c"
                 text: qsTr("OPŠTE \nUPRAVLJANJE I \n NADGLEDANJE")
                 font.pixelSize: 25
@@ -122,7 +130,7 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     var konfiguracijaWindow = Qt.createComponent("OpsteUpravljanjeINadgledanje.qml").createObject(parent);
-                    pocetniEkranId.visible = false;
+                    //pocetniEkranId.visible = false;
                     konfiguracijaWindow.show();
                 }
             }
@@ -133,7 +141,9 @@ Window {
             id: postavkeAlarmaId
             height: 350
             width: 300
-            color: "lightblue"
+            color: "#40006e8c"
+            border.color: "#006e8c"
+            border.width: 2
 
             Image {
                 source : "qrc:/Slike/postavke_alarma_ikona.png"
@@ -149,6 +159,8 @@ Window {
 
             Text {
                 property string nazivKvadrata3: "POSTAVKE ALARMA"
+                x: 40
+                y: 220
                 color: "#006e8c"
                 text: qsTr("POSTAVKE \nALARMA")
                 font.pixelSize: 25
@@ -164,7 +176,7 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     var konfiguracijaWindow = Qt.createComponent("PostavkeAlarma.qml").createObject(parent);
-                    pocetniEkranId.visible = false;
+                    //pocetniEkranId.visible = false;
                     konfiguracijaWindow.show();
                 }
             }
@@ -175,7 +187,9 @@ Window {
             id: logiranjeIPrikazAlarma
             height: 350
             width: 300
-            color: "lightblue"
+            color: "#40006e8c"
+            border.color: "#006e8c"
+            border.width: 2
 
             Image {
                 source : "qrc:/Slike/logiranje_i_prikaz_alrama_ikona.png"
@@ -191,6 +205,8 @@ Window {
 
             Text {
                 property string nazivKvadrata4: "LOGIRANJE I PRIKAZ ALARMA"
+                x: 40
+                y: 220
                 color: "#006e8c"
                 text: qsTr("LOGIRANJE I \nPRIKAZ ALARMA")
                 font.pixelSize: 25
@@ -206,8 +222,9 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     var konfiguracijaWindow = Qt.createComponent("LogiranjeIPrikazAlarma.qml").createObject(parent);
-                    pocetniEkranId.visible = false;
+
                     konfiguracijaWindow.show();
+                    //pocetniEkranId.close();
                 }
             }
         }
@@ -216,14 +233,14 @@ Window {
     // Prikaz vremena donji desni ćošak
     Text {
             id: foo
-            font.pointSize: 12
+            font.pointSize: 15
             anchors{
                 bottom: parent.bottom
                 right: parent.right
             }
             function set() {
                 var currentDate = new Date();
-                foo.text = formatDateTime(currentDate, "yyyy-MM-dd hh:mm:ss");
+                foo.text = formatDateTime(currentDate, "yyyy-MM-dd hh:mm:ss   ");
             }
          }
     Timer {
@@ -253,21 +270,21 @@ Window {
     Row {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 50
+            spacing: 150
 
             Text {
                 text: "Trenutni korisnik: <b>Tehničar</b>"
-                font.pixelSize: 14
+                font.pixelSize: 20
             }
 
             Text {
                 text: "Režim rada: <b>Standardni</b>"
-                font.pixelSize: 14
+                font.pixelSize: 20
             }
 
             Text {
                 text: "Trenutni pregled: <b>Početna stranica</b>"
-                font.pixelSize: 14
+                font.pixelSize: 20
             }
         }
 }
