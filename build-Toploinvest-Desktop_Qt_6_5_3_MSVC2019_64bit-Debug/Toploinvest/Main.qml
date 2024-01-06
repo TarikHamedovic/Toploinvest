@@ -3,13 +3,16 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Window
 
+//for QT Design Studio
+//import Toploinvest_design
+
 Window {
     id: pocetniEkranId
     property string pocetniEkran : "Pocetni Ekran"
     property int velicinaTexta : 18
     visible: true
-    width: 800
-    height: 600
+    width: 1920
+    height: 1080
     title: pocetniEkran
     color: "lightgrey"
     //visibility: Window.FullScreen
@@ -19,15 +22,19 @@ Window {
     Text {
         id: imeFirmeId
         property string imeFirme : "Toploinvest"
-        text: imeFirme
-        color: "darkblue"
+        color: "#006e8c"
+        text: "TOPLOINVEST"
+        anchors.topMargin: 27
+        anchors.horizontalCenterOffset: -1
+        font.styleName: "Bold"
+        font.bold: true
         anchors{
             top: parent.top
             horizontalCenter: parent.horizontalCenter
         }
         font {
             pixelSize: 50
-            family : "Alata"
+            family : "Verdana"
         }
     }
 
@@ -47,8 +54,10 @@ Window {
 
             Image {
                 source : "qrc:/Slike/konfiguracija_ikona.png"
+                anchors.horizontalCenterOffset: 0
                 width: 150
                 height : 150
+                anchors.topMargin: 27
                 anchors {
                     top: parent.top
                     horizontalCenter: parent.horizontalCenter
@@ -57,11 +66,14 @@ Window {
 
             Text {
                 property string nazivKvadrata1: "KONFIGURACIJA"
+                color: "#006e8c"
                 text: nazivKvadrata1
+                font.pixelSize: 25
+                font.bold: true
+                font.family: "Verdana"
+                anchors.verticalCenterOffset: 75
+                anchors.horizontalCenterOffset: 0
                 anchors.centerIn: konfiguracijaId
-                font {
-                    pixelSize : velicinaTexta
-                }
             }
 
             MouseArea {
@@ -83,8 +95,10 @@ Window {
 
             Image {
                 source : "qrc:/Slike/opste_upravljanje_i_nadgledanje_ikona.png"
-                width: 125
-                height : 130
+                anchors.horizontalCenterOffset: 0
+                width: 150
+                height : 150
+                anchors.topMargin: 27
                 anchors {
                     top: parent.top
                     horizontalCenter: parent.horizontalCenter
@@ -93,11 +107,15 @@ Window {
 
             Text {
                 property string nazivKvadrata2: "OPŠTE UPRAVLJANJE I NADGLEDANJE"
-                text: nazivKvadrata2
+                color: "#006e8c"
+                text: qsTr("OPŠTE \nUPRAVLJANJE I \n NADGLEDANJE")
+                font.pixelSize: 25
+                horizontalAlignment: Text.AlignHCenter
+                font.bold: true
+                font.family: "Verdana"
+                anchors.verticalCenterOffset: 75
+                anchors.horizontalCenterOffset: 0
                 anchors.centerIn: opsteUpravljanjeINadgledanjeId
-                font {
-                    pixelSize : velicinaTexta
-                }
             }
 
             MouseArea {
@@ -119,8 +137,10 @@ Window {
 
             Image {
                 source : "qrc:/Slike/postavke_alarma_ikona.png"
+                anchors.horizontalCenterOffset: 0
                 width: 150
                 height : 150
+                anchors.topMargin: 27
                 anchors {
                     top: parent.top
                     horizontalCenter: parent.horizontalCenter
@@ -129,11 +149,15 @@ Window {
 
             Text {
                 property string nazivKvadrata3: "POSTAVKE ALARMA"
-                text: nazivKvadrata3
+                color: "#006e8c"
+                text: qsTr("POSTAVKE \nALARMA")
+                font.pixelSize: 25
+                horizontalAlignment: Text.AlignHCenter
+                font.bold: true
+                font.family: "Verdana"
+                anchors.verticalCenterOffset: 75
+                anchors.horizontalCenterOffset: 0
                 anchors.centerIn: postavkeAlarmaId
-                font {
-                    pixelSize : velicinaTexta
-                }
             }
 
             MouseArea {
@@ -155,8 +179,10 @@ Window {
 
             Image {
                 source : "qrc:/Slike/logiranje_i_prikaz_alrama_ikona.png"
+                anchors.horizontalCenterOffset: 0
                 width: 150
                 height : 150
+                anchors.topMargin: 27
                 anchors {
                     top: parent.top
                     horizontalCenter: parent.horizontalCenter
@@ -165,11 +191,15 @@ Window {
 
             Text {
                 property string nazivKvadrata4: "LOGIRANJE I PRIKAZ ALARMA"
-                text: nazivKvadrata4
+                color: "#006e8c"
+                text: qsTr("LOGIRANJE I \nPRIKAZ ALARMA")
+                font.pixelSize: 25
+                horizontalAlignment: Text.AlignHCenter
+                font.bold: true
+                font.family: "Verdana"
+                anchors.verticalCenterOffset: 75
+                anchors.horizontalCenterOffset: 0
                 anchors.centerIn: logiranjeIPrikazAlarma
-                font {
-                    pixelSize : velicinaTexta
-                }
             }
 
             MouseArea {
